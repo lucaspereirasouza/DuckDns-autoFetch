@@ -37,15 +37,14 @@ or
 $token > token
 ```
 
-> to not make every user be able to mess it up, restrict access to the file:
->
-> ```bash
-> sudo chown root:root duckdns.sh
-> sudo chown root:root token
+> To prevent unauthorized users from making changes, restrict access to the .sh and token:
+ ```bash
+sudo chown root:root duckdns.sh
+sudo chown root:root token
 
-> sudo chmod ug+rwx duckdns.sh
-> sudo chmod ug+rw token
-> ```
+sudo chmod ug+rwx duckdns.sh
+sudo chmod ug+rw token
+ ```
 
 ### 4. Run the Script Manually (Optional)
 
